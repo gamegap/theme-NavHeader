@@ -1,0 +1,180 @@
+//-------------- HEADER -------------
+
+.d-header{   
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0);
+    // z-index: 999;
+        // border-bottom: #615b5b 1px solid;
+    
+    .icons #current-user:not(.active) {
+        float: right;
+        
+        .flagged-posts {
+            left: 350px;
+        }
+        .unread-private-messages {
+            right: 65px;
+        }
+        .unread-notifications {
+            right: 40px;
+        }
+    }
+    .wrap{
+        max-width:999999px;
+     }
+}
+
+.drop-down-visible .d-header .icons .active .icon:after{
+  border-top:0px !important;
+}
+
+.add-nav-links .list-controls{
+    padding-top:0px;
+}
+
+.list-controls {
+    padding-top: 200px;
+    
+    .category-notification-menu  .btn {
+        float: right;
+        margin-left: 8px;
+        margin-bottom: 10px;
+        font-size: 1.143em;
+        font-weight: normal;
+        position: relative;
+        top: 20px;
+        right: 0px;
+    }
+    
+    .edit-category {
+        position: relative;
+        right: 0%;
+        top: 20px;
+    }
+    
+    .btn-default[title="Edit"] {
+        border-radius: 0px;
+        position: inherit;
+        z-index: 999;
+        padding: 6px 12px;
+        background-color: #2196f3;
+        color: white;
+        text-indent: 0px;
+        -webkti-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+        -moz-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+        box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    }
+    
+    .btn-default[title="New Topic"] {
+        padding: 22px 15px 22px 5px !important;
+    }
+//-----------------Category Dropdowns-------------------
+    .category-dropdown-menu{
+        padding-left: 14px;
+    }
+
+    .category-dropdown-menu .cat{
+        line-height: 1.25;
+    }
+    ol.category-breadcrumb {
+        display: block;
+        float: left;
+        list-style: none;
+        margin: 0 10px 0 0;
+        padding: 0;
+        border-bottom: #ccc solid 1px;
+        position: fixed;
+        left: 0px;
+        top: 60px;
+        width: 14%;
+        z-index: 998;
+        background-color: #EDECEC;
+        height: 33px;
+        
+        li:last-of-type:not(:first-of-type) {
+            position: relative;
+            bottom: -210px;
+            left: 45%;
+        }
+    }
+    
+    .category-breadcrumb{
+        
+        li.bullet > .badge-category{
+            background-color: #EDECEC !important;
+            color: #616161 !important;
+        }
+        li:first-child .category-dropdown-menu .cat:last-child{
+            background: #D32F2F url("/uploads/default/original/1X/003a68bae14da9966dde2c12d6d5b882f5e2e41f.png") no-repeat left center;
+            background-size: contain;
+            height: 50px;
+            position: relative;
+            left: -20px;
+            width: 120%;
+        }
+        li:first-child .category-dropdown-menu .cat:last-child a{
+            height: 50px;
+            opacity: 0;
+        }
+    
+        a.badge-category {
+            padding: 5px 8px 5px 20px;
+        }
+//---------------END Category Dropdowns-------------------
+
+//---------------  Nav-Pills  ----------------------------        
+        + .nav {
+            float: left;
+            margin-bottom: 18px;
+            border-bottom: #ccc solid 1px;
+            width: 120%;
+            position: fixed;
+            left: 14%;
+            top: 60px;
+            z-index: 998;
+            background-color: #EDECEC;
+        }
+        + .nav-pills > li {
+            float: left;
+            margin-right: 5px;
+            width: 11%;
+            text-align: center;
+
+        }
+        + .nav-pills a{
+            color:#616161;
+        }
+    }
+    
+    .nav-pills > li > a:hover{
+        background-color: #EDECEC;
+        color: #F50057 !important;   
+    }
+
+    .nav-pills > li.active > a, .nav-pills > li > a.active {
+        color: #F50057 !important;
+        font-weight: 500;
+        background-color: #EDECEC;
+        border-bottom: 3px solid #F50057;
+    }
+    .nav-pills .material-icons{
+        padding-right:5px;
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 0;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+        vertical-align: middle;
+        padding-bottom: 4px;
+    }    
+//---------------  END Nav-Pills ------------------------     
+}
+
+//-------------- END HEADER -------------
